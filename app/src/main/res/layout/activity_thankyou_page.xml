@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ThankyouPage">
+
+    <TextView
+        android:id="@+id/tvThankyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="303dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_button"
+        android:text="Return Home to Continue Shopping"
+        android:textColor="@color/cardview_light_background" />
+</LinearLayout>

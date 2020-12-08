@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
+    tools:context=".CreateAccount">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvSignup"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Create Account"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHint="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+        <EditText
+            android:id="@+id/etFullNameCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etEmailAccount"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etContactCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etAddressCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="122dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etCityCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="City"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etPostalCodeCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Postal Code"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etProvinceCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Province"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="Where were you born?"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etSecurity"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="e.g... City/Village"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etPasswordCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/etConfirmPasswordCreateAcc"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <Button
+            android:id="@+id/btnCreateAccRegister"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/drawable_button"
+
+            android:paddingLeft="10dp"
+            android:text="Register"
+            android:textColor="@color/design_default_color_background" />
+
+        <TextView
+            android:id="@+id/tvReturnLoginCreate"
+            android:layout_width="355dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Already have Account? Click here"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

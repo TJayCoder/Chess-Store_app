@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp">
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_gravity="center"
+        android:background="@drawable/pictures_border"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/art" />
+
+    <TextView
+        android:id="@+id/tvPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Portrait"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="R300"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_button"
+
+        android:text="Add to cart"
+        android:textColor="@color/cardview_light_background" />
+</LinearLayout>

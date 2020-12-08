@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Cart"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/account"
+        android:title="Profile"
+
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/category"
+        android:title="Category"
+
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/order"
+        android:title="Orders Invoice"
+
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/rate"
+        android:title="Rate The App"
+
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/about"
+        android:title="About Us"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        />
+
+
+</menu>
