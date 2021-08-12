@@ -32,7 +32,7 @@ class QuantityFrag : android.app.DialogFragment() {
 
         btnAddtoCart.setOnClickListener{
 
-            var UrlOrder="http://192.168.0.104/redink/tempOrder.php?email="+UserData.Email+"&productId="+UserData.ProductId+"&quantityNumber="+quanityValue.text.toString().trim()
+            var UrlOrder="https://www.roamcode.co.za/redink/tempOrder.php?email="+UserData.Email+"&productId="+UserData.ProductId+"&quantityNumber="+quanityValue.text.toString().trim()
             var requestQ=Volley.newRequestQueue(activity);
             var stringRequest=StringRequest(Request.Method.GET,UrlOrder, {
 

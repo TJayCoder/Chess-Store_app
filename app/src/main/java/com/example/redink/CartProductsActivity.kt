@@ -9,12 +9,10 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_cart_products.*
-import kotlinx.android.synthetic.main.activity_finalized_shopping.*
 
 class CartProductsActivity : AppCompatActivity() {
 
@@ -27,7 +25,7 @@ class CartProductsActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
 
-        var Urlcart="http://192.168.0.104/redink/retrieveTempoOrders.php?email="+UserData.Email;
+        var Urlcart="https://www.roamcode.co.za/redink/retrieveTempoOrders.php?email="+UserData.Email;
 
         var cartProductsList=ArrayList<String>()
         var requestQ=Volley.newRequestQueue(this);
@@ -55,7 +53,7 @@ class CartProductsActivity : AppCompatActivity() {
         btnPayCart.setOnClickListener{
 
 
-            var URlVerify="http://192.168.0.104/redink/verify_order.php?email="+UserData.Email;
+            var URlVerify="https://www.roamcode.co.za/redink/verify_order.php?email="+UserData.Email;
             var requestQ=Volley.newRequestQueue(this)
             var stringBuilder=StringRequest(Request.Method.GET,URlVerify, { response ->
 
@@ -79,7 +77,7 @@ class CartProductsActivity : AppCompatActivity() {
 
 
         //retrieve the total price
-        var URLCalcTotal="http://192.168.0.104/redink/calculateGrand.php?email="+UserData.Email
+        var URLCalcTotal="https://www.roamcode.co.za/redink/calculateGrand.php?email="+UserData.Email
 
         var requesty=Volley.newRequestQueue(this)
         var stringRequest=StringRequest(Request.Method.GET,URLCalcTotal, { response ->
@@ -113,12 +111,12 @@ class CartProductsActivity : AppCompatActivity() {
 
             R.id.continueshopping -> {
 
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, MainActivityStore::class.java))
             }
 
             R.id.verify -> {
 
-                var URlVerify="http://192.168.0.104/redink/verify_order.php?email="+UserData.Email;
+                var URlVerify="https://www.roamcode.co.za/redink/verify_order.php?email="+UserData.Email;
                 var requestQ=Volley.newRequestQueue(this)
                 var stringBuilder=StringRequest(Request.Method.GET,URlVerify, { response ->
 
@@ -141,7 +139,7 @@ class CartProductsActivity : AppCompatActivity() {
 
             R.id.decline -> {
 
-                var UrlDelete="http://192.168.0.104/redink/deleteOrders.php?email="+UserData.Email
+                var UrlDelete="https://www.roamcode.co.za/redink/deleteOrders.php?email="+UserData.Email
                 var requestQ=Volley.newRequestQueue(this);
                 var stringRequst=StringRequest(Request.Method.GET,UrlDelete, { response ->
 
@@ -149,7 +147,7 @@ class CartProductsActivity : AppCompatActivity() {
 
 
                     Toast.makeText(this,response,Toast.LENGTH_LONG).show()
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, MainActivityStore::class.java))
 
 
                 }, { error ->

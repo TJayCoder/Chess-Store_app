@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
@@ -13,11 +12,10 @@ import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.models.SlideModel
-import com.example.redink.MainActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivityStore : AppCompatActivity() {
 
     // Creating Progress dialog.
     var progressDialog: ProgressDialog? = null
@@ -32,10 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         val slideModels: MutableList<SlideModel> = ArrayList<SlideModel>()
 
-        slideModels.add(SlideModel(R.drawable.art, "Canvas"))
-        slideModels.add(SlideModel(R.drawable.shirt, "Shirt"))
-        slideModels.add(SlideModel(R.drawable.cup, "Cup"))
-        slideModels.add(SlideModel(R.drawable.canvas, "Canvas"))
+        slideModels.add(SlideModel(R.drawable.chessboard, "Chessboard"))
+        slideModels.add(SlideModel(R.drawable.specialbottle, "bottle"))
+        slideModels.add(SlideModel(R.drawable.chessset, "Chess-Set"))
+        slideModels.add(SlideModel(R.drawable.scorebooks, "Books"))
 
 
         imageSlider.setImageList(slideModels, true)
@@ -46,8 +44,8 @@ class MainActivity : AppCompatActivity() {
 
         var CategoryList=ArrayList<CProducts>()
 
-        val URL = "http://192.168.0.104/redink/homePage.php"
-        val request = Volley.newRequestQueue(this@MainActivity)
+        val URL = "https://www.roamcode.co.za/redink/homePage.php"
+        val request = Volley.newRequestQueue(this@MainActivityStore)
         val jsonArrayRequest = JsonArrayRequest(
             Request.Method.GET,
             URL,
@@ -104,43 +102,43 @@ class MainActivity : AppCompatActivity() {
 
             R.id.Home -> {
 
-                startActivity(Intent(this@MainActivity, MainActivity::class.java))
+                startActivity(Intent(this@MainActivityStore, MainActivityStore::class.java))
             }
 
             R.id.cart -> {
 
-                startActivity(Intent(this@MainActivity, CartProductsActivity::class.java))
+                startActivity(Intent(this@MainActivityStore, CartProductsActivity::class.java))
             }
             R.id.account -> {
-                startActivity(Intent(this@MainActivity, Profile::class.java))
+                startActivity(Intent(this@MainActivityStore, Profile::class.java))
 
             }
             R.id.category -> {
-                startActivity(Intent(this@MainActivity, Category::class.java))
+                startActivity(Intent(this@MainActivityStore, Category::class.java))
 
             }
             R.id.order -> {
-                startActivity(Intent(this@MainActivity, HistoryOrders::class.java))
+                startActivity(Intent(this@MainActivityStore, HistoryOrders::class.java))
 
             }
             R.id.help -> {
 
-                startActivity(Intent(this@MainActivity, HelpUser::class.java))
+                startActivity(Intent(this@MainActivityStore, HelpUser::class.java))
 
             }
             R.id.about -> {
 
-                startActivity(Intent(this@MainActivity, AboutUs::class.java))
+                startActivity(Intent(this@MainActivityStore, AboutUs::class.java))
 
             }
 
             R.id.rate -> {
 
-                startActivity(Intent(this@MainActivity, RateApp::class.java))
+                startActivity(Intent(this@MainActivityStore, RateApp::class.java))
 
             }
             R.id.logout -> {
-                startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                startActivity(Intent(this@MainActivityStore, LoginActivityStore::class.java))
                 finish();
             }
         }

@@ -4,8 +4,6 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
@@ -48,7 +46,7 @@ class HelpUser : AppCompatActivity() {
             } else if (Comment.isEmpty()) {
                 Toast.makeText(this, "Enter Complain/Comments", Toast.LENGTH_SHORT).show()
             } else {
-                val URLHelp = "http://192.168.0.104/redink/contact.php?OrderNumber="+OrderNumber+"&Email="+UserData.Email+"&CellNumber="+Contact+"&Message="+Comment
+                val URLHelp = "https://www.roamcode.co.za/redink/contact.php?OrderNumber="+OrderNumber+"&Email="+UserData.Email+"&CellNumber="+Contact+"&Message="+Comment
                 val request = Volley.newRequestQueue(this)
                 val stringRequest = StringRequest(
                     Request.Method.GET, URLHelp,
@@ -60,7 +58,7 @@ class HelpUser : AppCompatActivity() {
                             Toast.makeText(this, response, Toast.LENGTH_SHORT).show()
                         } else {
                             Toast.makeText(this, response, Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this, MainActivity::class.java))
+                            startActivity(Intent(this, MainActivityStore::class.java))
                         }
                     }) { error -> // Hiding the progress dialog after all task complete.
                     progressDialog!!.dismiss()

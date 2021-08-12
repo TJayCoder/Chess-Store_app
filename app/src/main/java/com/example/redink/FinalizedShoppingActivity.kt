@@ -29,7 +29,7 @@ class FinalizedShoppingActivity : AppCompatActivity() {
                     "Brantch: 38439 \n")
 
         //retrieve the total price
-        var URLCalcTotal="http://192.168.0.104/redink/CalculateTotalPriceOrder.php?email="+UserData.Email
+        var URLCalcTotal="https://www.roamcode.co.za/redink/CalculateTotalPriceOrder.php?email="+UserData.Email
 
         var requestQ=Volley.newRequestQueue(this)
         var stringRequest=StringRequest(Request.Method.GET,URLCalcTotal, { response ->

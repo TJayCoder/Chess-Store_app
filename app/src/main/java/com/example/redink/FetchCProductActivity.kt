@@ -22,7 +22,7 @@ class FetchCProductActivity : AppCompatActivity() {
         var CategoryList=ArrayList<CProducts>()
 
         var URLCategory =
-            "http://192.168.0.104/redink/fetchProduct.php?ProductCategory=" + itemsclicked.replace(" ","%20");
+            "https://www.roamcode.co.za/redink/fetchProduct.php?ProductCategory=" + itemsclicked.replace(" ","%20");
         val requestQ=Volley.newRequestQueue(this)
         val jsonAR=JsonArrayRequest(Request.Method.GET,URLCategory,null, { response ->
 

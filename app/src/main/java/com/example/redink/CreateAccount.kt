@@ -53,7 +53,7 @@ class CreateAccount : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@CreateAccount,
-                    LoginActivity::class.java
+                    LoginActivityStore::class.java
                 )
             )
         })
@@ -164,7 +164,7 @@ class CreateAccount : AppCompatActivity() {
                     progressDialog!!.dismiss()
                 }
                 else -> {
-                    val URL = "http://192.168.0.104/redink/registration.php?FullName=${Fullname.replace(" ","20%")}&Password=$Password&Email=$Email&Address=${Address.replace(" ","%20")}&CellNumber=$Contact&City=${City.replace(" ","20%")}&Provincial=$Provice&PostalCode=$PostalCode&SecurityQuestion=${SecurityQ.replace(" ","20%")}"
+                    val URL = "https://www.roamcode.co.za/redink/registration.php?FullName=${Fullname.replace(" ","20%")}&Password=$Password&Email=$Email&Address=${Address.replace(" ","%20")}&CellNumber=$Contact&City=${City.replace(" ","20%")}&Provincial=$Provice&PostalCode=$PostalCode&SecurityQuestion=${SecurityQ.replace(" ","20%")}"
                     val request = Volley.newRequestQueue(this@CreateAccount)
                     val stringRequest = StringRequest(Request.Method.GET, URL, { response ->
                         if (response == "User Exist") {
@@ -174,7 +174,8 @@ class CreateAccount : AppCompatActivity() {
                             Toast.makeText(this@CreateAccount, response, Toast.LENGTH_SHORT).show()
                         } else {
                             Toast.makeText(this@CreateAccount, response, Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this@CreateAccount, LoginActivity::class.java))
+                            startActivity(Intent(this@CreateAccount, LoginActivityStore::class.java))
+                            finish();
                         }
                     }) { error -> // Hiding the progress dialog after all task complete.
                         progressDialog!!.dismiss()

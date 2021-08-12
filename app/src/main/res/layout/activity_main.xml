@@ -7,7 +7,7 @@
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
 
-    tools:context=".MainActivity">
+    tools:context=".MainActivityStore">
 
     <com.denzcoskun.imageslider.ImageSlider
         android:layout_width="match_parent"

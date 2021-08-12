@@ -17,7 +17,7 @@ class Category : AppCompatActivity() {
         setContentView(R.layout.activity_category)
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
-        var categoryUrl="http://192.168.0.104/redink/collectionProduct.php";
+        var categoryUrl="https://www.roamcode.co.za/redink/collectionProduct.php";
 
         var CategoryList=ArrayList<String>();
 

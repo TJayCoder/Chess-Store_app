@@ -45,7 +45,7 @@ class RecyclerCProductsAdapter(var context: Context, var arrayList: ArrayList<CP
             itemView.tvPriceCproduct.text="Product Price R"+price.toString()
             itemView.tvIdCProduct.text="Product Id: "+productid.toString()
 
-            val picURL = "http://192.168.0.104/redink/store/"
+            val picURL = "https://www.roamcode.co.za/redink/avaliableStock/"
             picURL.replace(" ", "%20")
             Picasso.get().load(picURL+picName).into(itemView.imageViewCProduct)
 

@@ -71,7 +71,7 @@ class ForgotPassword : AppCompatActivity() {
                 }
                 else -> {
                     val URL =
-                        "http://192.168.0.104/redink/forgotPassword.php?Email=$Email&SecurityQuestion=$SecurityQuestion"
+                        "https://www.roamcode.co.za/redink/forgotPassword.php?Email=$Email&SecurityQuestion=$SecurityQuestion"
                     val request = Volley.newRequestQueue(this@ForgotPassword)
                     val stringRequest = StringRequest(Request.Method.GET, URL, { response ->
                         if (response == "Correct Security details") {
@@ -96,6 +96,6 @@ class ForgotPassword : AppCompatActivity() {
                 }
             }
         })
-        tvReturnLoginPassword.setOnClickListener(View.OnClickListener { startActivity(Intent(this@ForgotPassword, LoginActivity::class.java)) })
+        tvReturnLoginPassword.setOnClickListener(View.OnClickListener { startActivity(Intent(this@ForgotPassword, LoginActivityStore::class.java)) })
     }
 }

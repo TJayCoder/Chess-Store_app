@@ -6,52 +6,52 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/queensplash"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/queensplash"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".ThankyouPage"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivityStore"/>
         <activity
             android:name=".HistoryOrders"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
         <activity
             android:name=".AboutUs"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
         <activity
             android:name=".RateApp"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
         <activity
             android:name=".HelpUser"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
         <activity
             android:name=".Profile"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
         <activity
             android:name=".FinalizedShoppingActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
         <activity
             android:name=".CartProductsActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
         <activity
             android:name=".FetchCProductActivity"
             android:parentActivityName=".CreateAccount" />
         <activity
             android:name=".Category"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity" />
+            android:parentActivityName=".MainActivityStore" />
+        <activity android:name=".MainActivityStore" />
         <activity
             android:name=".CreateAccount"
-            android:parentActivityName=".LoginActivity" />
-        <activity android:name=".LoginActivity" />
+            android:parentActivityName=".LoginActivityStore" />
+        <activity android:name=".LoginActivityStore" />
         <activity
             android:name=".ForgotPassword"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".LoginActivityStore" />
         <activity
             android:name=".ResetPassword"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".LoginActivityStore" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -11,8 +11,8 @@ class AboutUs : AppCompatActivity() {
 
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
-        tvCopyright.setText("Copyright C 1984-2020 Redink and its licensors. All rights reserved. Redink, the Redink logo, and Redink-Media are either registered or" +
-                " trademarks of Redink in South Africa and other countries. All other trademarks are the property of their respective owner ")
+        tvCopyright.setText("Copyright C 1984-2021 Chess Store and its licensors. All rights reserved. Chess Store, the Chess Store logo, and Redink-Media are either registered or" +
+                " trademarks of Chess Store in South Africa and other countries. All other trademarks are the property of their respective owner. ")
 
 
     }

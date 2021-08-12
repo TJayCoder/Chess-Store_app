@@ -31,7 +31,7 @@ class HistoryOrders : AppCompatActivity() {
 
         var Invoices=ArrayList<String>()
 
-        val URL = "http://192.168.0.104/redink/orderHistory.php?Email="+UserData.Email
+        val URL = "https://www.roamcode.co.za/redink/orderHistory.php?Email="+UserData.Email
         val request = Volley.newRequestQueue(this)
         val jsonArrayRequest = JsonArrayRequest(Request.Method.GET, URL, null, { response -> // Hiding the progress dialog after all task complete.
             progressDialog!!.dismiss()

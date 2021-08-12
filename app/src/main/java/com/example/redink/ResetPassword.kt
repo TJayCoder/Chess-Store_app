@@ -69,7 +69,7 @@ class ResetPassword : AppCompatActivity() {
             else {
                 val Email = intent.getStringExtra("Email")
                 val URL =
-                    "http://192.168.0.104/redink/resetPassword.php?Email=$Email&Password=$Pass1"
+                    "https://www.roamcode.co.za/redink/resetPassword.php?Email=$Email&Password=$Pass1"
                 val request = Volley.newRequestQueue(this@ResetPassword)
                 val stringRequest = StringRequest(Request.Method.GET, URL, { response ->
                     if (response == "User does not exist") {
@@ -79,7 +79,8 @@ class ResetPassword : AppCompatActivity() {
                         Toast.makeText(this@ResetPassword, response, Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(this@ResetPassword, response, Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this@ResetPassword, LoginActivity::class.java))
+                        startActivity(Intent(this@ResetPassword, LoginActivityStore::class.java))
+                        finish()
                     }
                 }) { error -> // Hiding the progress dialog after all task complete.
                     progressDialog!!.dismiss()

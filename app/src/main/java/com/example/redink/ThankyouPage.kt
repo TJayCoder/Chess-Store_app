@@ -15,7 +15,7 @@ class ThankyouPage : AppCompatActivity() {
         tvThankyou.setText(message.toUpperCase())
         btnReturnHome.setOnClickListener{
 
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,MainActivityStore::class.java))
         }
     }
 }

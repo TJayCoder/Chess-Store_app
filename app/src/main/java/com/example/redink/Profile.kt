@@ -4,12 +4,9 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.android.volley.Request
-import com.android.volley.RequestQueue
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
@@ -36,7 +33,7 @@ class Profile : AppCompatActivity() {
 
 
 
-            val URL = "http://192.168.0.104/redink/UserAccount.php?Email="+UserData.Email
+            val URL = "https://www.roamcode.co.za/redink/userAccount.php?Email="+UserData.Email
             val request = Volley.newRequestQueue(this)
             val jsonArrayRequest = JsonArrayRequest(Request.Method.GET, URL, null, { response -> // Hiding the progress dialog after all task complete.
                 progressDialog!!.dismiss()
@@ -94,7 +91,7 @@ class Profile : AppCompatActivity() {
             progressDialog!!.dismiss()
              }else{
 
-            var URLupdate:String= "http://192.168.0.104/redink/updateUserInfor.php?Address=${Address.replace(" ","%20")}&CellNumber=$Contact&City=${City.replace(" ","20%")}&Province=$Provice&PostalCode=$PostalCode&Email=${UserData.Email}"
+            var URLupdate:String= "https://www.roamcode.co.za/redink/updateUserInfor.php?Address=${Address.replace(" ","%20")}&CellNumber=$Contact&City=${City.replace(" ","20%")}&Province=$Provice&PostalCode=$PostalCode&Email=${UserData.Email}"
 
 
             var requesty=Volley.newRequestQueue(this);
@@ -105,7 +102,7 @@ class Profile : AppCompatActivity() {
                 Toast.makeText(this,response,Toast.LENGTH_LONG).show()
 
 
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, MainActivityStore::class.java))
 
 
             }, { error ->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,27 +19,16 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="401dp"
-            app:srcCompat="@drawable/splash" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_height="344dp"
             android:layout_marginBottom="10dp"
-            android:text="Version 20.1.0.12050"
-            android:textColor="@color/design_default_color_on_secondary"
-            android:textSize="18sp"
-            tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="102dp" />
+            app:srcCompat="@drawable/queensplash" />
 
         <TextView
             android:id="@+id/tvCopyright"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="TextView"
@@ -47,6 +36,28 @@
             android:textSize="18sp"
             tools:layout_editor_absoluteX="35dp"
             tools:layout_editor_absoluteY="150dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Brought To You By Roamcode."
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Version 1"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="102dp" />
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
