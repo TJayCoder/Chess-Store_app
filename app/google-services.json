@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "603646808241",
+    "firebase_url": "https://zakastokvel.firebaseio.com",
+    "project_id": "zakastokvel",
+    "storage_bucket": "zakastokvel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603646808241:android:e1448b0ad0f8c98b085290",
+        "android_client_info": {
+          "package_name": "com.example.redink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603646808241-n3s6n6r2o2f109ljig82e6om22l3q1en.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-kN6P42a-Y9PA1QWVFEZ7MytvGt-1nOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603646808241-n3s6n6r2o2f109ljig82e6om22l3q1en.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
